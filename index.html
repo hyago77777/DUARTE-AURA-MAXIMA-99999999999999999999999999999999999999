@@ -2,6 +2,13 @@
 <html lang="pt-br">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus objetivos do ano</title>
+    <link re<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Meus objetivos do ano</title>
@@ -142,7 +149,50 @@
 </div>
 <script src="main.js"></script>
 </body>
-</html>
+</html>const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+
+
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    for (let j = 0; j < botoes.length; j++) {
+      botoes[j].classList.remove("ativo");
+      textos[j].classList.remove("ativo");
+    }
+
+    botoes[i].classList.add("ativo");
+    textos[i].classList.add("ativo");
+  };
+}
+
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2026-11-30");
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function calculaTempo(tempoObjetivo) {
+  let tempoAtual = new Date();
+  let tempoFinal = tempoObjetivo - tempoAtual;
+  let segundos = Math.floor(tempoFinal / 1000);
+  let minutos = Math.floor(segundos / 60);
+  let horas = Math.floor(minutos / 60);
+  let dias = Math.floor(horas / 24);
+
+  segundos %= 60;
+  minutos %= 60;
+  horas %= 24;
+  
+  return (
+  dias +
+  " dias " +
+  horas +
+  " horas " +
+  minutos +
+  " minutos " +
+  segundos +
+  " segundos"
+);
+}
 <div class="aba-conteudo ativo">
   <h3 class="aba-conteudo-titulo-principal">Estudar 4 cursos na Alura</h3>
   <h4 class="aba-conteudo-titulo-secundario">
@@ -195,4 +245,144 @@ const tempoObjetivo1 = new Date("2023-10-05T00:00:00");
 let tempoAtual = new Date();
 
 contadores[0].textContent = tempoObjetivo1 - tempoAtual;
-<button class="botao">Escuro</button>
+<button class="botao">Escuro</button>l="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section class="conteudo-principal">
+        <h2 class="titulo-principal">Meus desejos para 2026<span>_</span></h2>
+        <div class="conteudo">
+            <div class="botoes">
+                <button class="botao ativo">Finalizar o projeto do PDE</button>
+                <button class="botao">Aprofundar meus conhecimentos em JS</button>
+                <button class="botao">Desenvolver oficinas WinStem</button>
+                <button class="botao">Ter uma rotina mais leve</button>
+            </div>
+            <div class="abas-textos">
+                <div class="aba-conteudo ativo">
+                    <h3 class="aba-conteudo-titulo-principal">Finalizar meu projeto com dedicação e criatividade</h3>
+                    <h4 class="aba-conteudo-titulo-secundario">
+                        Tempo para completaconst botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+
+
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    for (let j = 0; j < botoes.length; j++) {
+      botoes[j].classList.remove("ativo");
+      textos[j].classList.remove("ativo");
+    }
+
+    botoes[i].classList.add("ativo");
+    textos[i].classList.add("ativo");
+  };
+}
+
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2026-11-30");
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function calculaTempo(tempoObjetivo) {
+  let tempoAtual = new Date();
+  let tempoFinal = tempoObjetivo - tempoAtual;
+  let segundos = Math.floor(tempoFinal / 1000);
+  let minutos = Math.floor(segundos / 60);
+  let horas = Math.floor(minutos / 60);
+  let dias = Math.floor(horas / 24);
+
+  segundos %= 60;
+  minutos %= 60;
+  horas %= 24;
+  
+  return (
+  dias +
+  " dias " +
+  horas +
+  " horas " +
+  minutos +
+  " minutos " +
+  segundos +
+  " segundos"
+);
+}r o objetivo
+                    </h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">Criar projetos mais interativos e melhorar minhas
+                        habilidades
+                    </h3>
+                    <h4 class="aba-conteudo-titulo-secundario">
+                        Tempo para completar o objetivo
+                    </h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">const botoes = document.querySelectorAll(".botao");
+const textos = document.querySelectorAll(".aba-conteudo");
+
+
+for (let i = 0; i < botoes.length; i++) {
+  botoes[i].onclick = function () {
+    for (let j = 0; j < botoes.length; j++) {
+      botoes[j].classList.remove("ativo");
+      textos[j].classList.remove("ativo");
+    }
+
+    botoes[i].classList.add("ativo");
+    textos[i].classList.add("ativo");
+  };
+}
+
+const contadores = document.querySelectorAll(".contador");
+const tempoObjetivo1 = new Date("2026-11-30");
+
+contadores[0].textContent = calculaTempo(tempoObjetivo1);
+
+function calculaTempo(tempoObjetivo) {
+  let tempoAtual = new Date();
+  let tempoFinal = tempoObjetivo - tempoAtual;
+  let segundos = Math.floor(tempoFinal / 1000);
+  let minutos = Math.floor(segundos / 60);
+  let horas = Math.floor(minutos / 60);
+  let dias = Math.floor(horas / 24);
+
+  segundos %= 60;
+  minutos %= 60;
+  horas %= 24;
+  
+  return (
+  dias +
+  " dias " +
+  horas +
+  " horas " +
+  minutos +
+  " minutos " +
+  segundos +
+  " segundos"
+);
+}
+                    <h3 class="aba-conteudo-titulo-principal">
+                        Inspirar meninas na área da tecnologia.
+                    </h3>
+                    <h4 class="aba-conteudo-titulo-secundario">
+                        Tempo para completar o objetivo
+                    </h4>
+                    <div class="contador"></div>
+                </div>
+                <div class="aba-conteudo">
+                    <h3 class="aba-conteudo-titulo-principal">
+                        Equilibrar trabalho, estudos e descanso.
+                    </h3>
+                    <h4 class="aba-conteudo-titulo-secundario">
+                        Tempo para completar o objetivo
+                    </h4>
+                    <div class="contador"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="main.js"></script>
+</body>
+
+</html>
