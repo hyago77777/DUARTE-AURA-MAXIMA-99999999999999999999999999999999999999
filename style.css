@@ -88,4 +88,12 @@ body {
   text-align: center;
   color: var(--verde);
   text-transform: uppercase;
+}GitHub 
+.botao{
+  padding: 2em; 
+}
+
+.fundo-preto{
+  background: black;
+  color: white;
 }
