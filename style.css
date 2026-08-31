@@ -1,114 +1,132 @@
-@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap");
-
-:root {
-  --cor-de-fundo: hsl(315, 100%, 50%);
-  --vermelho: hsl(0, 100%, 50%);
-  --preto: hsl(0, 0%, 0%);
-  --botao-ativo: hsl(182, 100%, 50%);
-  --botao-inativo: rgb(21, 0, 255);
-  --texto-fundo: rgb(21, 0, 255);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 body {
-  background-color: var(--cor-de-fundo);
-  color: var(--branco);
-  font-family: "Chakra Petch", sans-serif;
+  background-color: #f4f6f9;
+  color: #333333;
+  line-height: 1.6;
 }
 
-.conteudo-principal {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 1200px;
-  width: 100%;
+/* CABEÇALHO */
+header {
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+  color: #ffffff;
+  text-align: center;
+  padding: 50px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  letter-spacing: 0.5px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #cbd5e1;
+  max-width: 600px;
   margin: 0 auto;
 }
 
-.titulo-principal {
-  text-align: left;
-  width: 100%;
-  font-size: 32px;
+/* CONTAINER DO CATÁLOGO DE TINTAS */
+.catalogo {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
 }
 
-.titulo-principal span {
-  color: var(--verde);
-}
-
-.botao {
-  font-family: "Crakra Petch", sans-serif;
-  background-color: var(--botao-inativo);
-  color: var(--branco);
+/* CARTÃO DO PRODUTO */
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
   display: flex;
-  justify-content: center;
-  padding: 1em;
-  font-size: 18px;
-  align-items: center;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+/* AMOSTRA DA COR DA TINTA */
+.amostra-cor {
+  height: 180px;
   width: 100%;
-  border-bottom: 4px solid var(--botao-ativo);
-  border-left: 2px solid var(--botao-ativo);
-  border-right: 2px solid var(--botao-ativo);
-  border-top: none;
+  border-bottom: 1px solid #e2e8f0;
 }
 
-.botao:first-child {
-  border-radius: 40px 40px 0 0;
+/* INFORMAÇÕES DO PRODUTO */
+.card-info {
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-.botoes {
-  display: block;
-}
-.ativo {
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--verde);
-}
-.abas-textos {
-  background-color: var(--texto-fundo);
-}
-.abas-textos {
-  background-color: var(--texto-fundo);
-  padding: 40px;
-  border-radius: 0 0 40px 40px;
-}
-.botao.ativo {
-  background-color: var(--botao-ativo);
-  border-bottom: 4px solid var(--verde);
-}
-.aba-conteudo.ativo {
-  display: block;
-}
-.aba-conteudo {
-  display: none;
-}
-.aba-conteudo-titulo-principal {
-  font-size: 28px;
-  text-align: center;
-}
-.aba-conteudo-titulo-secundario {
-  text-align: center;
-  color: var(--verde);
+.categoria {
+  font-size: 0.75rem;
+  color: #64748b;
   text-transform: uppercase;
-}GitHub 
-.botao{
-  padding: 2em; 
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 5px;
 }
 
-.fundo-preto{
-  background: black;
-  color: white;
-}
-const textos = document.querySelectorAll(".aba-conteudo");
-
-
-for (let i = 0; i < botoes.length; i++) {
-  botoes[i].onclick = function () {
-    for (let j = 0; j < botoes.length; j++) {
-      botoes[j].classList.remove("ativo");
-      textos[j].classList.remove("ativo");
-    }
-
-    botoes[i].classList.add("ativo");
-    textos[i].classList.add("ativo");
-  };
+.card-info h3 {
+  font-size: 1.35rem;
+  color: #1e293b;
+  margin-bottom: 10px;
 }
 
+.card-info p {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 20px;
+  flex-grow: 1;
+}
+
+.preco {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 18px;
+}
+
+/* BOTÃO DO WHATSAPP */
+.btn-whatsapp {
+  background-color: #25d366;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s ease;
+  display: block;
+}
+
+.btn-whatsapp:hover {
+  background-color: #1eb855;
+}
+
+/* RODAPÉ */
+footer {
+  text-align: center;
+  padding: 25px 20px;
+  background-color: #e2e8f0;
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-top: 50px;
+}
