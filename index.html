@@ -1,34 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Catálogo NEW COLLOR</title>
+  <title>Empresa de Tintas | Pinturas & Obras</title>
   <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-  <header>
-    <h1>Nossas Tintas NEW COLLOR</h1>
+  <nav class="navbar">
+    <div class="logo">Tintas & Obras</div>
+    <ul class="nav-links">
+      <li><a href="#sobre">Sobre Nós</a></li>
+      <li><a href="#servicos">Serviços</a></li>
+      <li><a href="#obras">Nossas Obras</a></li>
+      <li><a href="#contato">Contato</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Transformando Ambientes com Cores e Qualidade</h1>
+    <p>Especialistas em fornecimento de tintas e projetos de pintura para residências, comércios e indústrias.</p>
+    <a href="#contato" class="btn-principal">Solicitar Orçamento</a>
   </header>
 
-  <main class="catalogo">
-    <div class="card">
-     
-      
-      <div class="card-info">
-        <h3>Azul Profundo</h3>
-        <p>azul profundo um otimo tom para um quarto...</p>
+  <main>
+    <section id="sobre" class="secao">
+      <h2>Sobre A Nossa Empresa</h2>
+      <p>Com anos de experiência no mercado de tintas, oferecemos produtos de altíssima durabilidade e mão de obra qualificada para garantir o acabamento perfeito em qualquer estrutura.</p>
+    </section>
+
+    <section id="servicos" class="secao bg-light">
+      <h2>O Que Fazemos</h2>
+      <div class="grid-servicos">
+        <div class="card-servico">
+          <h3>Pintura Residencial</h3>
+          <p>Acabamentos finos para ambientes internos e externos, laváveis e de alta durabilidade.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Pintura Comercial</h3>
+          <p>Projetos ágeis para lojas, escritórios e prédios comerciais sem interromper a sua rotina.</p>
+        </div>
+        <div class="card-servico">
+          <h3>Venda de Tintas</h3>
+          <p>Linha completa de tintas acrílicas, esmaltes, vernizes e tintas industriais sob medida.</p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <section id="obras" class="secao">
+      <h2>Nossas Obras e Projetos</h2>
+      <p class="subtitulo">Confira alguns dos trabalhos realizados por nossa equipe:</p>
+
+      <div class="grid-obras">
+        <div class="card-obra">
+          <div class="foto-obra" style="background-color: #2b5c8f;">
+            <span>Foto da Obra 1</span>
+          </div>
+          <div class="obra-info">
+            <h3>Fachada Comercial - Centro</h3>
+            <p>Aplicação de tinta acrílica emborrachada contra umidade e raios UV.</p>
+          </div>
+        </div>
+
+        <div class="card-obra">
+          <div class="foto-obra" style="background-color: #4a5d4e;">
+            <span>Foto da Obra 2</span>
+          </div>
+          <div class="obra-info">
+            <h3>Residência de Alto Padrão</h3>
+            <p>Pintura interna completa com acabamento aveludado e tons pastéis.</p>
+          </div>
+        </div>
+
+        <div class="card-obra">
+          <div class="foto-obra" style="background-color: #d4a373;">
+            <span>Foto da Obra 3</span>
+          </div>
+          <div class="obra-info">
+            <h3>Galpão Industrial</h3>
+            <p>Pintura epóxi de alta resistência para pisos e estruturas metálicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contato" class="secao bg-light">
+      <h2>Fale Conosco</h2>
+      <p class="subtitulo">Peça um orçamento sem compromisso ou agende uma visita técnica!</p>
+
+      <div class="container-contato">
+        <div class="info-contato">
+          <p><strong>Telefone/WhatsApp:</strong> (00) 90000-0000</p>
+          <p><strong>E-mail:</strong> contato@suaempresa.com.br</p>
+          <p><strong>Endereço:</strong> Rua das Tintas, 123 - Centro</p>
+          <p><strong>Atendimento:</strong> Seg a Sex, das 08h às 18h</p>
+        </div>
+
+        <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria%20de%20fazer%20um%20orçamento" target="_blank" class="btn-whatsapp-grande">
+          Falar pelo WhatsApp Agora
+        </a>
+      </div>
+    </section>
   </main>
 
   <footer>
-    <p>Contacto da Loja</p>
+    <p>&copy; 2026 Tintas & Obras. Todos os direitos reservados.</p>
   </footer>
 
 </body>
-
-</html> ```
+</html>
